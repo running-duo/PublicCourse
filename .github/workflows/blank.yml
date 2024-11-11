@@ -20,7 +20,7 @@ jobs:
             -d '{
                   "title": "Daily Check-in - $(date +'%Y-%m-%d')",
                   "body": "Progress for today: ...",
-                  "assignees": ["member-username"],  # 指定分派的成员
+                  "assignees": ["Yuikij"],  # 指定分派的成员
                   "labels": ["check-in"]
                 }' \
             https://api.github.com/repos/${{ github.repository }}/issues
