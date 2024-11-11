@@ -16,7 +16,7 @@ jobs:
       - name: Create GitHub issue
         run: |
           curl -X POST \
-            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
             -d '{
                   "title": "Daily Check-in - $(date +'%Y-%m-%d')",
                   "body": "Progress for today: ...",
